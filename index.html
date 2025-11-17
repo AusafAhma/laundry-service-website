@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laundry Services</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="/Source/style.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+    emailjs.init({
+        publicKey: "5mnAW_dBWTP1l6pEV",
+    });
+})();
+</script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="/img/Untitled design.png" alt="Company Logo">
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+                <div class="user-name">Ashu!</div>
+                <div class="mobile-menu">☰</div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Revitalize Your Clothes with Expert <b class="laundry">Laundry Services!</b></h1>
+                    <p class="para-graph">From premium dry cleaning to swift wash and fold, 
+                        we deliver care and convenience. Schedule a pickup and rediscover the freshness of your clothes today!</p>
+                    <button class="btn-primary" onclick="scrollToBooking()">
+                        Book a service today!
+                    </button>
+                </div>
+                <div class="hero-image">
+                    <img src="https://plus.unsplash.com/premium_photo-1664372899525-d99a419fd21a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=994" alt="Laundry Services">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="achievements" aria-label="Our Achievements">
+        <div>
+            <strong class="ach">Our Achievements</strong>
+        </div>
+        <div>
+            <strong>15+</strong><br> Laundry Services
+        </div>
+        <div>
+            <strong>240+</strong><br> Happy Customers
+        </div>
+        <div>
+            <strong>2+</strong><br> Yrs Experience
+        </div>
+    </section>
+
+    <!-- Booking Services Section -->
+    <section class="booking-section" id="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <p>Click On The Add To Cart Button To Add The Services To Your Cart</p>
+            <div class="booking-container">
+                <div class="services-list">
+                    <div class="service-item">
+                        <div class="service-info">
+                            <h3>Dry Cleaning</h3>
+                            <div class="service-price">$200.00</div>
+                        </div>
+                        <div class="service-actions">
+                            <button class="btn-secondary remove-item" data-service="Dry Cleaning" data-price="200">Remove Item</button>
+                            <button class="btn-primary add-item" data-service="Dry Cleaning" data-price="200">Add Item</button>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-info">
+                            <h3>Wash & Fold</h3>
+                            <div class="service-price">$100.00</div>
+                        </div>
+                        <div class="service-actions">
+                            <button class="btn-secondary remove-item" data-service="Wash & Fold" data-price="100">Remove Item</button>
+                            <button class="btn-primary add-item" data-service="Wash & Fold" data-price="100">Add Item</button>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-info">
+                            <h3>Ironing</h3>
+                            <div class="service-price">$30.00</div>
+                        </div>
+                        <div class="service-actions">
+                            <button class="btn-secondary remove-item" data-service="Ironing" data-price="30">Remove Item</button>
+                            <button class="btn-primary add-item" data-service="Ironing" data-price="30">Add Item</button>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-info">
+                            <h3>Stain Removal</h3>
+                            <div class="service-price">$500.00</div>
+                        </div>
+                        <div class="service-actions">
+                            <button class="btn-secondary remove-item" data-service="Stain Removal" data-price="500">Remove Item</button>
+                            <button class="btn-primary add-item" data-service="Stain Removal" data-price="500">Add Item</button>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-info">
+                            <h3>Leather and Suede Cleaning</h3>
+                            <div class="service-price">$999.00</div>
+                        </div>
+                        <div class="service-actions">
+                            <button class="btn-secondary remove-item" data-service="Leather and Suede Cleaning" data-price="999">Remove Item</button>
+                            <button class="btn-primary add-item" data-service="Leather and Suede Cleaning" data-price="999">Add Item</button>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-info">
+                            <h3>Wedding Dress Cleaning</h3>
+                            <div class="service-price">$2800.00</div>
+                        </div>
+                        <div class="service-actions">
+                            <button class="btn-secondary remove-item" data-service="Wedding Dress Cleaning" data-price="2800">Remove Item</button>
+                            <button class="btn-primary add-item" data-service="Wedding Dress Cleaning" data-price="2800">Add Item</button>
+                        </div>
+                    </div>
+                    <p style="margin-top: 20px; font-style: italic;">Add items to the cart to proceed with booking</p>
+                </div>
+
+                <div class="booking-form-container">
+                    <div class="cart-summary">
+                        <h3>Added Items</h3>
+                        <table class="cart-table">
+                            <thead>
+                                <tr>
+                                    <th>S.No</th>
+                                    <th>Service Name</th>
+                                    <th>Price</th>
+                                </tr>
+                            </thead>
+                            <tbody id="cart-items">
+                                <tr>
+                                    <td colspan="3">No items added yet</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="total-amount" id="total-amount">Total: $0.00</div>
+                    </div>
+
+                    <div class="booking-form">
+                        <h3>Book Now</h3>
+                        <div class="form-group">
+                            <label for="full-name">Full Name</label>
+                            <input type="text" id="full-name" placeholder="Enter your full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email ID</label>
+                            <input type="email" id="email" placeholder="mailid@gmail.com">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" placeholder="000000000">
+                            </div>
+                        </div>
+                        <button class="btn-primary" id="book-now-btn" style="width: 100%;" onclick="sendEmail">Book Now</button>
+                        <div class="confirmation-message" id="confirmation-message">
+                            Thank you for booking the service! We will get back to you soon.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quality Description Section -->
+    <section class="quality-section" id="about">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us</h2>
+            <div class="qualities">
+                <div class="quality-item">
+                    <div class="quality-icon">🧼</div>
+                    <div class="quality-text">
+                        <h3>Premium Services</h3>
+                        <p>Elevate your wardrobe with our meticulous dry cleaning, ensuring garments look and feel as good as new.</p>
+                    </div>
+                </div>
+                <div class="quality-item">
+                    <div class="quality-icon">⏱️</div>
+                    <div class="quality-text">
+                        <h3>Quick Support</h3>
+                        <p>We're committed to providing prompt solutions to ensure your experience is smooth and worry-free.</p>
+                    </div>
+                </div>
+                <div class="quality-item">
+                    <div class="quality-icon">🚚</div>
+                    <div class="quality-text">
+                        <h3>Hassle Free Delivery</h3>
+                        <p>Enjoy seamless service with our convenient pickup and delivery options, tailored to your schedule.</p>
+                    </div>
+                </div>
+                <div class="quality-item">
+                    <div class="quality-icon">💰</div>
+                    <div class="quality-text">
+                        <h3>Affordable Prices</h3>
+                        <p>Experience exceptional care without breaking the bank – our affordable prices make laundry day stress-free.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Subscribe to our newsletter</h2>
+            <p>Stay updated with our latest offers, services, and laundry tips</p>
+            <form class="newsletter-form" id="newsletter-form">
+                <input type="text" placeholder="Full name" required>
+                <input type="email" placeholder="Email address" required>
+                <button type="submit" class="btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="/img/Untitled design.png" alt="Ligemame Logo">
+                    </div>
+                    <h4>About Us</h4>
+                    <p>With over 2 years of experience, we provide top-quality laundry services.</p>
+                </div>
+                <div class="footer-column">
+                    <div class="footer-links">
+                        <h3>Important Links</h3>
+                        <ul>
+                            <li><a href="#about">About us</a></li>
+                            <li><a href="#contact">Contact us</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of use</a></li>
+                            <li><a href="#">Refund Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <div class="footer-contact">
+                        <h3>Contact</h3>
+                        <p>mail@site.com</p>
+                        <p>+91 91234 56780</p>
+                        <h4>Follow Us</h4>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon" aria-label="Facebook">f</a>
+                            <a href="#" class="social-icon" aria-label="Twitter">t</a>
+                            <a href="#" class="social-icon" aria-label="LinkedIn">in</a>
+                            <a href="#" class="social-icon" aria-label="Instagram">ig</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2023 Ligemame Laundry Services. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script src="/Source/script.js"></script>
+    
+</body>
+</html>

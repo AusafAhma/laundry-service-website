@@ -8,7 +8,7 @@ A modern, responsive laundry service website built with pure HTML, CSS, and Java
 
 ## 🚀 Live Demo
 
-[View Live Website](https://your-demo-link.netlify.app) <!-- Replace with your actual link -->
+[View Live Website](https://velvety-trifle-251b29.netlify.app/) <!-- Replace with your actual link -->
 
 ## ✨ Features
 
